@@ -1,0 +1,317 @@
+:root{
+    --first-color:#dab70d
+}
+
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.navbar{
+    padding:20px;
+    background-color: #000;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom:  1px solid var(--first-color);
+    color:var(--first-color);
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar .container{
+    display: flex;
+    width: 50%;
+}
+
+.navbar img{
+    height: 80px;
+    margin-right: 10px;
+}
+
+
+.route, .container{
+    color: var(--first-color);
+    margin:20px;
+    padding: 0px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.navbar .route:hover{
+    color: #000;
+    background-color: var(--first-color);
+    margin:20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.nosotros{
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    border-radius: 15px;
+    width: 95%;
+    margin: 3% auto;
+    padding: 10px;
+}
+
+.nosotros p{
+    text-align: justify;
+    padding: 30px;
+}
+
+.nosotros img{
+    shape-outside: circle(50%);
+    width: 320px;
+    object-fit: contain;
+    border-radius: 20%;
+    float: left;
+    margin: 20px 80px 10px 70px;
+}
+
+.productos-nav {   
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+}
+
+.footer{
+    /* background-image: url(../assets/images/background-footer.svg); */
+    background-color: #000;
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.box-footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-footer img{
+    width: 300px;
+    border-radius:20px;
+}
+
+.box-footer .formulario{
+    max-width: 350px;
+    padding: 20px;
+    color:#fff;
+}
+
+.box-footer .formulario input[type="text"]{
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid var(--first-color);
+    font-size: 20px;
+}
+
+.box-footer .formulario input[type="text"]:focus{
+    background-color: #fff;
+    border: none;
+    color:#000
+}
+
+.box-footer .formulario label{
+    padding: 10px;
+    font-weight: 500px;
+}
+
+.box-footer .formulario .sugerencias{
+    width: 400px;
+    height: 200px;
+}
+
+.box-footer .redes .red{
+    width:  60px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+.swiper {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color:#000
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 250px;
+}
+
+.swiper-slide .info{
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+@media (max-width:700px){
+    .navbar{
+        flex-direction: column;
+        height: 130px;
+    }
+    .navbar .container{
+        height: 70px;
+    }
+    .navbar nav{
+        padding:5px
+    }
+    .nosotros {
+        text-align: center;
+    }
+    .nosotros img{
+        width: 210px;
+        border-radius: 50px;
+        margin: 30px;
+        shape-outside: circle(50%);
+    }
+    .productos-nav{
+        flex-direction: column;
+        display: flex;
+        flex-wrap:wrap;
+        height: 120px;
+    }
+
+    .swiper {
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        color:#000
+      }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 200px;
+        height: 250px;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 200px;
+      }
+      
+      .swiper-slide .info{
+          background-color: var(--first-color);
+          text-align: center;
+      }
+
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-footer .logo{
+        display: none;
+    }
+
+    .box-footer .formulario .sugerencias{
+        width: 325px;
+    }
+    
+}
+
+.form-camisetas{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: var(--first-color);
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select {
+    width: 30%;
+    background-color: #000;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    color: var(--first-color);
+    padding: 10px;
+    margin: 20px
+}
+
+.selectTipo{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    width: 30%;
+}
+
+.containerInfo{
+    border-left: 1px solid #000;
+    border-radius:5px;
+    width: 50%;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerInfo .select{
+    display: block;
+    margin: 20px auto;
+}
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg,#000, #DB8300, #3958ED, #DBB20B,#52158F,  
+	#6D00DB,#8F0084,#196BA8, #196BA8,var(--first-color), #000);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
